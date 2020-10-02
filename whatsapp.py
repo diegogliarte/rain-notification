@@ -19,7 +19,6 @@ def send_whatsapp(message, sender, receiver):
 
     # this is the Twilio sandbox testing number
     from_whatsapp_number='whatsapp:' + sender.replace(" ", "")
-    print(from_whatsapp_number)
     # replace this number with your own WhatsApp Messaging number
     to_whatsapp_number='whatsapp:' + receiver.replace(" ", "")
 
