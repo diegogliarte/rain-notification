@@ -3,6 +3,7 @@ import rain
 import os
 
 def main():
+    print("Beginning rain-notification.")
     stats = rain.get_rain("http://www.aemet.es/xml/municipios_h/localidad_h_25120.xml")
     messages = []
     for key, value in stats.items():
