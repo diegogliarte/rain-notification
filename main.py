@@ -8,7 +8,7 @@ def main():
     messages = []
     for key, value in stats.items():
         if value[0].count("lluvia") or int(value[1]) >= 40:
-            messages.append(f"Around {key}:00, there's a {value[1]}% of raining. The description is '{value[0]}.'")
+            messages.append(f"Around {key}:00h, there's a {value[1]}% of raining. The description is '{value[0]}.'")
 
     sender = os.environ["TWILIO_SENDER"]
     receiver = os.environ["TWILIO_RECEIVER"]
