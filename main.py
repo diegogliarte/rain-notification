@@ -15,7 +15,7 @@ def main():
     receiver2 = os.environ["TWILIO_RECEIVER2"]
     for message in messages:
         whatsapp.send_whatsapp(message, sender, receiver)
-        WhatsApp.send_whatsapp(message, sender, receiver2)
+        whatsapp.send_whatsapp(message, sender, receiver2)
 
 if __name__ == "__main__":
     main()
